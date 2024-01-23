@@ -26,11 +26,9 @@
   text-align: center;
 }
 
-/**Media query mobile*/
-@media only screen and (min-width:320px) and (max-width:767px) {}
-
-/**Media query tablette*/
-@media only screen and (min-width:768px) and (max-width:1024px) {}
-
-/**Media query extra large*/
+/**Media query style*/
+/* @media(max) */
+/***/
+@media only screen and (min-width:768px) and (max-width:1024px){}
+/* media extra large */
 @media only screen and (min-width:1025px) and (max-width:1400px) {}

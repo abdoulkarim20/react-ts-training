@@ -1,0 +1,10 @@
+.task-form {
+    display: flex;
+    width: 90%;
+    align-items: center;
+}
+
+.input-task {
+    width: 100%;
+    border-radius: ;
+}

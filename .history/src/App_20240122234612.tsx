@@ -5,7 +5,7 @@ function App() {
   return (
     <div className='App'>
       <span className='Heading'>Taskify</span>
-      <InputField />
+      <InputField
     </div>
   )
 }
