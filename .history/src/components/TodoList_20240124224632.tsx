@@ -13,7 +13,7 @@ const TodoList: React.FC<Props> = ({ todos, setTodos }) => {
                     todo={todo}
                     key={todo.id}
                     todos={todos}
-                    setTodos={setTodos}
+                    setTodos={s}
                 />
             ))}
         </div>

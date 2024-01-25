@@ -19,7 +19,7 @@ const SingleTodo = ({ todo, todos, setTodos }: Props) => {
     }
     /**La fonction qui permet de supprimer un todo*/
     const handleDelete = (id: number) => {
-        setTodos(todos.filter((todo) => todo.id !== id));
+        setTodos(todos.filter(todo)=>tod)
     }
 
 

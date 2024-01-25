@@ -64,13 +64,3 @@
     border: none;
     font-size: 20px;
 }
-
-.todo-text:focus {
-    outline: none;
-}
-
-.icon {
-    margin-left: 10px;
-    font-size: 25px;
-    cursor: pointer;
-}

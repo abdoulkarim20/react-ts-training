@@ -17,12 +17,6 @@ const SingleTodo = ({ todo, todos, setTodos }: Props) => {
             todos.map((todo) => todo.id === id ? { ...todo, isDone: !todo.isDone } : todo)
         );
     }
-    /**La fonction qui permet de supprimer un todo*/
-    const handleDelete = (id: number) => {
-        setTodos(todos.filter((todo) => todo.id !== id));
-    }
-
-
     return (
         <form className='single-todo-form'>
             {
@@ -32,12 +26,12 @@ const SingleTodo = ({ todo, todos, setTodos }: Props) => {
                     <span className='todo-text'>{todo.todo}</span>
                 )
             }
-
+            
             <div>
                 <span className='icon'>
                     <AiFillEdit />
                 </span>
-                <span className='icon' onClick={() => handleDelete(todo.id)}>
+                <span className='icon'>
                     <AiFillDelete />
                 </span>
                 <span className='icon' onClick={() => handleDone(todo.id)}>
