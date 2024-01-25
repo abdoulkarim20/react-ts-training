@@ -1,5 +1,0 @@
-const InputField = () => {
-    return (
-        <di
-    )
-}
