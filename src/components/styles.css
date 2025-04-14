@@ -47,6 +47,7 @@
     justify-content: space-evenly;
     width: 90%;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .single-todo-form {
@@ -116,6 +117,17 @@
         font-weight: 600;
     }
 }
+
+.todo-date {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.filters button {
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
 
 /**Media query tablette*/
 @media only screen and (min-width:768px) and (max-width:1024px) {}
