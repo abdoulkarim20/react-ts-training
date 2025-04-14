@@ -49,9 +49,9 @@ const App: React.FC = () => {
       <InputField todo={todo} setTodo={setTodo} handleAddTodo={handleAddTodo} />
       {todos.length > 0 && (
         <div className="filters">
-          <button onClick={() => setFilter("all")}>Tous</button>
+          <button onClick={() => setFilter("all")} >Tous</button>
           <button onClick={() => setFilter("active")}>À faire</button>
-          <button onClick={() => setFilter("done")}>Terminés</button>
+          <button onClick={() => setFilter("done")}>Terminées</button>
         </div>
       )}
       <TodoList todos={filteredTodos} setTodos={setTodos} />
