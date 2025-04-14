@@ -70,6 +70,9 @@ const SingleTodo = ({ todo, todos, setTodos }: Props) => {
                 <span className='icon' onClick={() => handleDone(todo.id)}>
                     <MdDone />
                 </span>
+                <span className="todo-date">
+                Créée le : {new Date(todo.createdAt).toLocaleString()}
+                </span>
             </div>
         </form>
     )
