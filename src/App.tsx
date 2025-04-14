@@ -47,11 +47,13 @@ const App: React.FC = () => {
       {message && <div className="success-message">{message}</div>}
       <span className='Heading'>Gestion des tâches</span>
       <InputField todo={todo} setTodo={setTodo} handleAddTodo={handleAddTodo} />
-      <div className="filters">
-        <button onClick={() => setFilter("all")}>Tous</button>
-        <button onClick={() => setFilter("active")}>À faire</button>
-        <button onClick={() => setFilter("done")}>Terminées</button>
-      </div>
+      {todos.length > 0 && (
+        <div className="filters">
+          <button onClick={() => setFilter("all")}>Tous</button>
+          <button onClick={() => setFilter("active")}>À faire</button>
+          <button onClick={() => setFilter("done")}>Terminés</button>
+        </div>
+      )}
       <TodoList todos={filteredTodos} setTodos={setTodos} />
     </div>
   )
